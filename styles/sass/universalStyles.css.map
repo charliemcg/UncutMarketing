@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AACD,AAAA,iBAAiB,CAAC;EAChB,WAAW,EAAE,4BAA4B;CAC1C",
+    "sources": [
+        "universalStyles.scss",
+        "constants.scss"
+    ],
+    "names": [],
+    "file": "universalStyles.css"
+}

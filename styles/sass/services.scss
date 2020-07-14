@@ -1,0 +1,137 @@
+@import "./colors.scss";
+@import "./constants.scss";
+
+#services-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services-first-paragraph,
+#services-third-paragraph {
+  width: 80%;
+  margin: 2%;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+  color: $fontLightGrey;
+}
+#services-second-paragraph {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: $fontDarkGrey;
+  text-align: center;
+}
+#services-carousel {
+  min-width: 0px;
+  height: 100%;
+  padding: 3% 0% 6% 0%;
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services-headline {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40%;
+  color: $fontDarkGrey;
+  font-size: 1.4rem;
+  flex: 2;
+}
+#services-description {
+  width: 40%;
+  color: $fontLightGrey;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  flex: 3;
+}
+#service-items-wrapper {
+  width: 100%;
+  margin: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+  text-align: center;
+  width: 95%;
+}
+#service-item-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  border: solid 3px $mainColor;
+}
+#service-item-img-wrapper {
+  height: 30%;
+}
+#service-item-img {
+  width: 100%;
+}
+#service-item-details {
+  height: 70%;
+}
+#service-item-title {
+  color: $fontDarkGrey;
+  padding: 5% 0 5% 0;
+  font-size: 1.6rem;
+  height: 15%;
+}
+#service-item-description {
+  color: $fontLightGrey;
+  font-size: 1.1rem;
+  flex: 1;
+  margin: 0% 2% 7% 2%;
+  height: 75%;
+}
+@media only screen and (max-width: $smallDesktop) {
+  #service-items-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #service-items-wrapper {
+    grid-gap: 1.6rem;
+  }
+  #services-headline,
+  #services-description {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #service-items-wrapper {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: $mobileWidth) {
+  #services-headline {
+    font-size: 1rem;
+  }
+  #services-description {
+    font-size: 0.9rem;
+  }
+  #service-item-img-wrapper {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  #service-item-img {
+    width: 60%;
+  }
+  #service-item-details {
+    height: 80%;
+  }
+  #service-item-title {
+    padding: 2% 0 2% 0;
+    font-size: 1.3rem;
+  }
+  #service-item-description {
+    font-size: 0.9rem;
+  }
+}

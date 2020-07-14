@@ -1,0 +1,46 @@
+@import "./colors.scss";
+@import "./constants.scss";
+
+#quote-relativity-wrapper {
+  position: relative;
+  background: $mainColor;
+}
+#quote-background-img {
+  width: 100%;
+}
+#quote-wrapper {
+  color: $white;
+  font-size: 2.5vw;
+  display: flex;
+  line-height: 1.3;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  height: 100%;
+}
+#quote-left {
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#quote-bottom {
+  width: 100%;
+  text-align: right;
+  font-size: 2vw;
+}
+#quote-right {
+  width: 30%;
+  text-align: center;
+}
+#quote-ceo-img {
+  height: 27vw;
+}
+@media only screen and (max-width: $mobileWidth) {
+  #quote-relativity-wrapper {
+    display: none;
+  }
+}

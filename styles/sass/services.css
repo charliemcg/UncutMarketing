@@ -1,0 +1,200 @@
+#services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services-first-paragraph,
+#services-third-paragraph {
+  width: 80%;
+  margin: 2%;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #777;
+}
+
+#services-second-paragraph {
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #444;
+  text-align: center;
+}
+
+#services-carousel {
+  min-width: 0px;
+  height: 100%;
+  padding: 3% 0% 6% 0%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 40%;
+  color: #444;
+  font-size: 1.4rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#services-description {
+  width: 40%;
+  color: #777;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+#service-items-wrapper {
+  width: 100%;
+  margin: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+  text-align: center;
+  width: 95%;
+}
+
+#service-item-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  border: solid 3px #d36462;
+}
+
+#service-item-img-wrapper {
+  height: 30%;
+}
+
+#service-item-img {
+  width: 100%;
+}
+
+#service-item-details {
+  height: 70%;
+}
+
+#service-item-title {
+  color: #444;
+  padding: 5% 0 5% 0;
+  font-size: 1.6rem;
+  height: 15%;
+}
+
+#service-item-description {
+  color: #777;
+  font-size: 1.1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0% 2% 7% 2%;
+  height: 75%;
+}
+
+@media only screen and (max-width: 1130px) {
+  #service-items-wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #service-items-wrapper {
+    grid-gap: 1.6rem;
+  }
+  #services-headline,
+  #services-description {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #service-items-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #services-headline {
+    font-size: 1rem;
+  }
+  #services-description {
+    font-size: 0.9rem;
+  }
+  #service-item-img-wrapper {
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #service-item-img {
+    width: 60%;
+  }
+  #service-item-details {
+    height: 80%;
+  }
+  #service-item-title {
+    padding: 2% 0 2% 0;
+    font-size: 1.3rem;
+  }
+  #service-item-description {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=services.css.map */

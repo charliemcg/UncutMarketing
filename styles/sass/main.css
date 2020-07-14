@@ -1,0 +1,77 @@
+#main-wrapper {
+  position: relative;
+}
+
+#main-img {
+  width: 100%;
+}
+
+#main-overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d36462), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, #d36462, rgba(255, 255, 255, 0.5));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-quote {
+  color: #fff;
+  font-weight: bold;
+  font-size: 7.5vw;
+  text-align: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-btn-wrapper {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#main-contact-btn {
+  color: #444;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  padding: 1vw 2vw 1vw 2vw;
+  border: solid 0.3vw #777;
+  cursor: pointer;
+}
+
+#main-contact-btn:hover {
+  font-size: 1.4rem;
+  border-color: #444;
+}
+
+@media only screen and (max-width: 415px) {
+  #main-contact-btn {
+    padding: 2vw 4vw 2vw 4vw;
+    font-size: 1rem;
+  }
+  #main-contact-btn:hover {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

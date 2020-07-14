@@ -1,0 +1,54 @@
+@import "./colors.scss";
+@import "./constants.scss";
+
+#main-wrapper {
+  position: relative;
+}
+#main-img {
+  width: 100%;
+}
+#main-overlay-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, $mainColor, rgba(255, 255, 255, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-quote {
+  color: $white;
+  font-weight: bold;
+  font-size: 7.5vw;
+  text-align: center;
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+#main-btn-wrapper {
+  flex: 2;
+}
+#main-contact-btn {
+  color: $fontDarkGrey;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  padding: 1vw 2vw 1vw 2vw;
+  border: solid 0.3vw $fontLightGrey;
+  cursor: pointer;
+  &:hover {
+    font-size: 1.4rem;
+    border-color: $fontDarkGrey;
+  }
+}
+@media only screen and (max-width: $mobileWidth) {
+  #main-contact-btn {
+    padding: 2vw 4vw 2vw 4vw;
+    font-size: 1rem;
+    &:hover {
+      font-size: 1.1rem;
+    }
+  }
+}
