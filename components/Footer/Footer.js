@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div id="footer-wrapper">
       <div id="footer-left">
-        <div id="footer-social-wrapper">
+        {/* <div id="footer-social-wrapper">
           {socialArr.map((icon, i) => {
             const { id, src, alt } = icon;
             return (
@@ -19,7 +19,7 @@ export default function Footer() {
               </a>
             );
           })}
-        </div>
+        </div> */}
         <div id="footer-details">
           <div id="footer-phone">{strings.phone}</div>
           <div id="footer-copyright">
